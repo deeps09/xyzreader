@@ -1,7 +1,0 @@
-#Fri Dec 16 14:19:20 IST 2016
-base.0=C\:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader\\XYZReader\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ca067b4d40b70c8592dd668bc2485ee8a558aa15
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader\\XYZReader\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_53439e299e377f5bf84ecf340db842c430eb95f2\\classes.dex
-base.1=C\:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader\\XYZReader\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_53439e299e377f5bf84ecf340db842c430eb95f2
-file.0=C\:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader\\XYZReader\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ca067b4d40b70c8592dd668bc2485ee8a558aa15\\classes.dex
