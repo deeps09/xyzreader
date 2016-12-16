@@ -4,30 +4,30 @@
     api-level="23"
     density="xxxhdpi"
     format="8"
-    plugin-version="2.2.2"
-    timestamp="913901097044419"
-    token="-1616516029096642597"
+    plugin-version="2.2.3"
+    timestamp="144678045886096"
+    token="-8060024876524383861"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="4209" />
+        duration="10141" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1821" />
+        duration="5189" />
     <task
         name="verifier"
-        duration="1347" />
+        duration="516" />
 
     <artifact
         location="C:\Users\Deepesh_gupta1\AndroidStudioProjects\NanodegreeApps\xyzreader\XYZReader\build\outputs\apk\XYZReader-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="913901097044419"
+        timestamp="144678045886096"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Deepesh_gupta1\AndroidStudioProjects\NanodegreeApps\xyzreader\XYZReader\build\outputs\apk\XYZReader-debug.apk"

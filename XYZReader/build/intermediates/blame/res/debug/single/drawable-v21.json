@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader1\\XYZReader\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\white_selectable_item_background_circle.xml",
-        "source": "C:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader1\\XYZReader\\src\\main\\res\\drawable-v21\\white_selectable_item_background_circle.xml"
-    },
-    {
         "merged": "C:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\white_selectable_item_background_circle.xml",
         "source": "C:\\Users\\Deepesh_gupta1\\AndroidStudioProjects\\NanodegreeApps\\xyzreader\\XYZReader\\src\\main\\res\\drawable-v21\\white_selectable_item_background_circle.xml"
     }
