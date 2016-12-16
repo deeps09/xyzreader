@@ -7,21 +7,31 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.graphics.Palette;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
+import android.transition.Slide;
+import android.transition.Transition;
+import android.transition.TransitionManager;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
@@ -47,6 +57,7 @@ public class ArticleDetailFragment extends Fragment implements
     private ObservableScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
+    private FloatingActionButton fab_share;
 
     private int mTopInset;
     private View mPhotoContainerView;
@@ -103,6 +114,8 @@ public class ArticleDetailFragment extends Fragment implements
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
+
+        fab_share = (FloatingActionButton) mRootView.findViewById(R.id.share_fab);
         mDrawInsetsFrameLayout = (DrawInsetsFrameLayout)
                 mRootView.findViewById(R.id.draw_insets_frame_layout);
         mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
@@ -120,6 +133,20 @@ public class ArticleDetailFragment extends Fragment implements
                 getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
                 mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
                 updateStatusBar();
+            }
+        });
+
+        if (Build.VERSION.SDK_INT >= 23)
+        mScrollView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(View view, int i, int i1, int i2, int i3) {
+                Log.d(TAG, "onScrollChange: " + i + " " + i1 + " " + i2 + " " + i3);
+
+                if (i1 > 300){
+                    fab_share.setVisibility(View.INVISIBLE);
+                }else{
+                    fab_share.setVisibility(View.VISIBLE);
+                }
             }
         });
 

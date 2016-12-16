@@ -18,10 +18,10 @@
 <resources>
 
     <style name="Theme.Bacon" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:colorPrimary">#F44336</item>
-        <item name="android:colorPrimaryDark">#C62828</item>
-        <item name="android:colorAccent">#FF8A80</item>
-        <item name="android:centerColor">#FF8A80</item>
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorPrimaryDark">#C62828</item>
+        <item name="colorAccent">#FF8A80</item>
+        <!--<item name="centerColor">#FF8A80</item>-->
     </style>
 
     <style name="Theme.Bacon.Detail">
